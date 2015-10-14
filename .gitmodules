@@ -1,0 +1,9 @@
+[submodule "neocomplete"]
+	path = sources_non_forked/neocomplete
+	url = https://github.com/Shougo/neocomplete.vim.git
+	branch = master
+
+[submodule "vim-lucius"]
+	path = sources_non_forked/vim-lucius
+	url = git@github.com:jonathanfilip/vim-lucius.git
+	branch = master
