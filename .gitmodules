@@ -7,3 +7,9 @@
 	path = sources_non_forked/vim-lucius
 	url = https://github.com/jonathanfilip/vim-lucius.git
 	branch = master
+[submodule "sources_non_forked/vim-javascript"]
+	path = sources_non_forked/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "sources_non_forked/vim-jst"]
+	path = sources_non_forked/vim-jst
+	url = https://github.com/briancollins/vim-jst
