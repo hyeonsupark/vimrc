@@ -4,7 +4,8 @@
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
 	git clone https://github.com/hyeonsupark/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
+	cd ~/.vim_runtime
+	sh install_awesome_vimrc.sh
 	git submodule init
 	git submodule update
 
