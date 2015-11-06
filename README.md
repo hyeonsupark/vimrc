@@ -5,6 +5,8 @@ The awesome version includes a lot of great plugins, configurations and color sc
 
 	git clone https://github.com/hyeonsupark/vimrc.git ~/.vim_runtime
 	sh ~/.vim_runtime/install_awesome_vimrc.sh
+	git submodule init
+	git submodule update
 
 The taglist.vim plugin will require ctags (http://ctags.sourceforge.net) (Debian: apt-get install ctags)
 
