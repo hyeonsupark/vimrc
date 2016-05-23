@@ -61,7 +61,7 @@ function! snipmate#legacy#process_snippet(snip) abort
 	endw
 
 	if &et " Expand tabs to spaces if 'expandtab' is set.
-		return substitute(snippet, '\t', repeat(' ', (&sts > 0) ? &sts : &sw), 'g')
+		return substitute(snippet, '\t', repeat(' ', snipmate#util#tabwidth()), 'g')
 	endif
 	return snippet
 endfunction
@@ -87,7 +87,7 @@ function! snipmate#legacy#build_stops(snip, lnum, col, indent) abort
 
 		let stops[i] = {}
 		let stops[i].line = a:lnum + s:count(beforeTabStop, "\n")
-		let stops[i].col = a:indent + len(matchstr(withoutOthers, '\_^.*\ze'.s:sigil .'{'.i.'\D'))
+		let stops[i].col = a:indent + len(matchstr(withoutOthers, '[^\n]\{-}\ze'.s:sigil .'{'.i.'\D'))
 		let stops[i].placeholder = 0
 		let stops[i].mirrors = []
 		if stops[i].line == a:lnum
