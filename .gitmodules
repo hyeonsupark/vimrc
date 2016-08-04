@@ -11,3 +11,9 @@
 [submodule "sources_non_forked/neocomplete"]
 	path = sources_non_forked/neocomplete
 	url = https://github.com/Shougo/neocomplete.vim.git
+[submodule "vim-colorschemes"]
+	path = sources_non_forked/vim-colorschemes
+	url = https://github.com/flazz/vim-colorschemes.git
+[submodule "vim-material-theme"]
+	path = sources_non_forked/vim-material-theme
+	url = https://github.com/jdkanani/vim-material-theme.git
