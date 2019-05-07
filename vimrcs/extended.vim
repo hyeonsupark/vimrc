@@ -28,8 +28,9 @@ set guioptions-=l
 set guioptions-=L
 
 " Colorscheme
-colorscheme lucius
-let g:colors_name="lucius"
+let g:dracula_italic = 0
+colorscheme dracula
+let g:colors_name="dracula"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs

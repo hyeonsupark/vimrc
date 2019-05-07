@@ -18,12 +18,19 @@ au BufNewFile,BufRead *.mako set ft=mako
 "au FileType python map <buffer> <leader>C ?class 
 "au FileType python map <buffer> <leader>D ?def 
 
+
+au FileType html setl sw=2 sts=2 ts=2 et
+au FileType scss setl sw=2 sts=2 ts=2 et
+au FileType sass setl sw=2 sts=2 ts=2 et
+
+
 """"""""""""""""""""""""""""""
 " => JavaScript section
 """""""""""""""""""""""""""""""
 " au FileType javascript call JavaScriptFold()
 au FileType javascript setl fen
 au FileType javascript setl nocindent
+au FileType javascript setl sw=2 sts=2 ts=2 et
 
 au FileType javascript imap <c-t> $log();<esc>hi
 au FileType javascript imap <c-a> alert();<esc>hi

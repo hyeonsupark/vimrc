@@ -153,11 +153,9 @@ if $COLORTERM == 'gnome-terminal'
 endif
 
 try
-    colorscheme lucius
+    colorscheme dracula
 catch
 endtry
-
-set background=dark
 
 " Set extra options when running in GUI mode
 "if has("gui_running")
@@ -187,14 +185,14 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-" set expandtab
+set expandtab
 
 " Be smart when using tabs ;)
-set smarttab
+" set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 " Linebreak on 500 characters
 set lbr
